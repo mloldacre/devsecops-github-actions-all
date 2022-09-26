@@ -15,8 +15,8 @@ jobs:
           cache: maven
       - name: Build with Maven cloud
         run:
-          mvn -B verify sonar:sonar -Dsonar.projectKey=devsecopsAll
-          -Dsonar.organization=devsecopsAll
+          mvn -B verify sonar:sonar -Dsonar.projectKey=devesecopsAll
+          -Dsonar.organization=devesecopsAll
           -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
